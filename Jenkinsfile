@@ -18,7 +18,7 @@ pipeline {
                 sh 'date'
             }
         }
-        stage('Deploy') {
+        stage('Deploy file') {
             steps {
                 echo 'Deploy Compleed'
             }
