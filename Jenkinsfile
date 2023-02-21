@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build ') {
             steps {
-                sh 'date
+                sh 'date'
                 echo 'Build Compleed'
             }
         }
