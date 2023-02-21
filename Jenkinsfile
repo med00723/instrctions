@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('SCM CHEKOUT') {
+        stage('SCM ') {
             steps {
                 echo 'geting from github'
                 echo 'SCM Compleed'
@@ -10,15 +10,17 @@ pipeline {
         }
         stage('Build ') {
             steps {
+                sh 'date
                 echo 'Build Compleed'
             }
         }
         stage('Test') {
             steps {
+                echo 'hello'
                 sh 'date'
             }
         }
-        stage('Deploy file') {
+        stage('Deploy') {
             steps {
                 echo 'Deploy Compleed'
             }
